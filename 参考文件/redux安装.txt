@@ -1,0 +1,19 @@
+redux需要安装 以下依赖：
+cnpm install redux --save
+cnpm install react-redux --save
+cnpm install redux-actions --save
+因为用到了es6/7的语法，需要安装babel转码
+cnpm install babel-plugin-import --save
+cnpm install babel-plugin-transform-decorators-legacy --save
+cnpm install babel-preset-es2015 --save
+cnpm install babel-preset-react--save
+cnpm install babel-preset-stage-2 --save
+以及添加.babelrc文件 （与package.json同级）
+{
+  "presets": [
+    "es2015",
+    "react",
+    "stage-2",
+  ],
+  "plugins": ["transform-decorators-legacy"]
+}
